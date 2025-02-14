@@ -16,10 +16,9 @@ jobs:
           task: start-measurement
         # continue-on-error: true # recommended setting for production. See notes below.
 
-      - name: "Checkout repository"
+     - name: "Checkout repository"
         uses: actions/checkout@v4
         with:
-          ref: "dev"
           submodules: "true"
 
       - name: Checkout Repo Measurement
