@@ -10,9 +10,7 @@ on:
       - develop
       - master
 
-
 jobs:
-
   flake8-linter:
     name: codestyle-reviewdog
     runs-on: ${{ matrix.os }}
@@ -143,7 +141,7 @@ jobs:
           pip --version
           pip list
         shell: bash
-# <- standard block end ->
+      # <- standard block end ->
 
       - name: check codestyle
         run: |
